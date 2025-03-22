@@ -1,0 +1,8 @@
+{
+  "entity.player.rubberband": {
+    "subtitle": "subtitles.entity.player.teleport",
+    "sounds": [
+      "rubberbanding_sfx:respawn"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "rubberbanding_sfx",
+  "version": "${version}",
+  "name": "Rubberbanding SFX",
+  "description": "Plays a sound every time server forcibly changes your location (rubberbanding, teleports). Clientside.",
+  "authors": [
+    "Kraskaska"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/rubberbanding_sfx/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kraskaska.minecraft.mods.rubberbandingsfx.fabric.RubberbandingSfxFabric"
+    ],
+    "client": [
+      "com.kraskaska.minecraft.mods.rubberbandingsfx.fabric.client.RubberbandingSfxFabricClient"
+    ]
+  },
+  "mixins": [
+    "rubberbanding-sfx.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "architectury": ">=15.0.3",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

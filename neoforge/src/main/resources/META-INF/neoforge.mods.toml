@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "GNU GPL 3.0"
+
+[[mods]]
+modId = "rubberbanding_sfx"
+version = "${version}"
+displayName = "Rubberbanding SFX"
+authors = "Kraskaska"
+description = '''
+Plays a sound every time server forcibly changes your location (rubberbanding, teleports). Clientside.
+'''
+logoFile = "icon.png"
+displayTest = "IGNORE_ALL_VERSION"
+
+[[dependencies.rubberbanding_sfx]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rubberbanding_sfx]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rubberbanding_sfx]]
+modId = "architectury"
+type = "required"
+versionRange = "[15.0.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "rubberbanding-sfx.mixins.json"

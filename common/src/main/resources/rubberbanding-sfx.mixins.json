@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.kraskaska.minecraft.mods.rubberbandingsfx.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "TeleportTargetMinecraftAccessor",
+    "TeleportTargetMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
